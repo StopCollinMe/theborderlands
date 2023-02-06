@@ -64,6 +64,12 @@ main{
     background-color: red;
 }
 
+.card-pos-a, .card-pos-b, .card-pos-c, .card-pos-d{
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+}
+
 .card{
     position: absolute;
     height: var(--card-height);
@@ -98,5 +104,9 @@ main{
 }
 
 .card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+
+.card-inner.flip-it{
     transform: rotateY(180deg);
 }
